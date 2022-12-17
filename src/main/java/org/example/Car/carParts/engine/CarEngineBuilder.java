@@ -1,6 +1,4 @@
-package org.example.carParts.engine;
-
-import org.example.carParts.body.CarBodyBuilder;
+package org.example.Car.carParts.engine;
 
 public class CarEngineBuilder {
 
@@ -25,12 +23,13 @@ public class CarEngineBuilder {
     return this;
   }
 
-  public CarEngineBuilder setPower(String brand) {
+  public CarEngineBuilder setBrand(String brand) {
     this.brand = brand;
     return this;
   }
 
   public Engine build(){
+    System.out.println("Car engine created");
     return new Engine(name, power, brand);
   }
 

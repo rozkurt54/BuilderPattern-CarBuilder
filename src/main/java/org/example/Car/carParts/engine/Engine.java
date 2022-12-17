@@ -1,4 +1,4 @@
-package org.example.carParts.engine;
+package org.example.Car.carParts.engine;
 
 public class Engine {
 
@@ -11,5 +11,12 @@ public class Engine {
     this.name = name;
     this.power = power;
     this.brand = brand;
+  }
+
+  @Override
+  public String toString() {
+    return "Engine{" +
+        "name='" + name + '\'' +
+        '}';
   }
 }

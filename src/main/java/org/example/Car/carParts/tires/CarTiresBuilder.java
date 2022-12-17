@@ -1,4 +1,4 @@
-package org.example.carParts.tires;
+package org.example.Car.carParts.tires;
 
 public class CarTiresBuilder {
 
@@ -10,7 +10,7 @@ public class CarTiresBuilder {
   CarTiresBuilder() {
   }
 
-  public CarTiresBuilder createCarTires() {
+  public static CarTiresBuilder createCarTires() {
     return new CarTiresBuilder();
   }
 
@@ -30,6 +30,7 @@ public class CarTiresBuilder {
   }
 
   public Tires build() {
+    System.out.println("Car tires created");
     return new Tires(name, brand, size);
   }
 

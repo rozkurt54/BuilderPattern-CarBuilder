@@ -1,10 +1,12 @@
-package org.example;
+package org.example.Car;
 
-import org.example.carParts.body.Body;
-import org.example.carParts.engine.Engine;
-import org.example.carParts.tires.Tires;
+import org.example.Car.carParts.body.Body;
+import org.example.Car.carParts.engine.Engine;
+import org.example.Car.carParts.tires.Tires;
 
 public class Car {
+
+  private String name;
 
   private Body body;
   private Engine engine;
@@ -15,5 +17,14 @@ public class Car {
     this.engine = engine;
     this.tires = tires;
   }
-  
+
+  @Override
+  public String toString() {
+    return "Car{" +
+        "name='" + name + '\'' +
+        ", body=" + body +
+        ", engine=" + engine +
+        ", tires=" + tires +
+        '}';
+  }
 }

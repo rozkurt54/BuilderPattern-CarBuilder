@@ -1,4 +1,4 @@
-package org.example.carParts.body;
+package org.example.Car.carParts.body;
 
 public class Body {
 
@@ -10,5 +10,12 @@ public class Body {
   Body(String name, String serialNumber) {
     this.name = name;
     SerialNumber = serialNumber;
+  }
+
+  @Override
+  public String toString() {
+    return "Body{" +
+        "name='" + name + '\'' +
+        '}';
   }
 }

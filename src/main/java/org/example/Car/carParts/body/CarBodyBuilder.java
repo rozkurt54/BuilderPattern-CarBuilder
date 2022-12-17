@@ -1,4 +1,4 @@
-package org.example.carParts.body;
+package org.example.Car.carParts.body;
 
 public class CarBodyBuilder {
 
@@ -26,6 +26,7 @@ public class CarBodyBuilder {
   }
 
   public Body build() {
+    System.out.println("Car body created");
     return new Body(name, serialNumber);
   }
 

@@ -1,4 +1,4 @@
-package org.example.carParts.tires;
+package org.example.Car.carParts.tires;
 
 public class Tires {
 
@@ -10,6 +10,13 @@ public class Tires {
     this.name = name;
     Brand = brand;
     this.size = size;
+  }
+
+  @Override
+  public String toString() {
+    return "Tires{" +
+        "name='" + name + '\'' +
+        '}';
   }
 
 }
